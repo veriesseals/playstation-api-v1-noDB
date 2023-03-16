@@ -19,39 +19,10 @@ router.use('/psGames', psGameRoutes);
 router.get('/', (req, res)=> {
     res.render('pages/home', {
         title: 'Playstation Games',
-        name: 'Games HQ'
+        name: 'Playstation Games Games HQ'
     })
 });
 
-// Create All Games Route
-// ---------------------------------------------
-router.get('/allGames', (req, res)=> {
-    res.render('pages/allGames', {
-        title: 'All Games',
-        name: 'All Games',
-        genre: 'All Genres'
-    })
-});
-
-// Create All Genre Route
-// ---------------------------------------------
-router.get('/gameGenre', (req, res)=> {
-    res.render('pages/gameGenre', {
-        title: 'Genre',
-        name: 'Genre',
-        genre: 'All Genres'
-    })
-});
-
-// Create All gameDeveloper Route
-// ---------------------------------------------
-router.get('/gameDeveloper', (req, res)=> {
-    res.render('pages/gameDeveloper', {
-        title: 'Game Developer',
-        name: 'Game Developer',
-        genre: 'All Developers'
-    })
-});
 
 // All Playstation Games games
 // ------------------------------------------------------
