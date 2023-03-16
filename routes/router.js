@@ -10,7 +10,7 @@ router.use(express.static('public'));
 // -------------------------------------------------
 const psGameRoutes = require('./api/psGameRoutes');
 
-// Create path that will point to jokeRoutes
+// Create path that will point to psGameRoutes
 // ---------------------------------------------
 router.use('/psGames', psGameRoutes);
 
