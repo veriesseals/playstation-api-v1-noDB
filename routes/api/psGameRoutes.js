@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+
 // Fetch
 // ---------------------------------------------
 const fetch = (...args)=> import('node-fetch').then(({default: fetch}) => fetch(...args));
@@ -28,6 +29,10 @@ router.get('/', (req, res)=> {
             res.render('pages/home', {
                 title: 'All Playstation Games',
                 name: 'All Games',
+                genre: 'All Genres',
+                developer: 'All Developers',
+                publisher: 'All Publishers',
+                releaseDates: 'All Release Dates',
                 data
             })
         })
